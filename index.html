@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- For Bootstrap responsiveness -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Le Wagon 2-hour profile workshop</title>
+
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="javascripts/all.js" type="text/javascript"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
+  <div class="banner-content">
+    <h1>2 hour profile</h1>
+    <p>Learn HTML and CSS with Le Wagon</p>
+  </div>
+</div>
+
+
+
+
+<div class="container-fluid readme">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+
+      <section class="readme-section">
+        <h2 class="readme-header">1. Let's set up</h2>
+        <ol>
+          <li>Start Sublime Text. It will open a new black window.</li>
+          <li>Create a <strong>folder</strong> <code>landing</code> on your Desktop. Drag & drop this folder in the Sublime Text window.</li>
+          <li>
+            In Sublime Text left navigation:
+            <ul>
+              <li>Right click <strong>"New file"</strong></li>
+              <li>Save it as <code>index.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
+              <li>Do the same to create a <code>style.css</code> file</li>
+              <li>Then <strong>"New Folder"</strong> and create an <code>images</code> folder</li>
+            </ul>
+            </ul>
+          </li>
+          <li>Finally double click on <code>index.html</code> to open it with Chrome</li>
+        </ol>
+
+        <img src='images/setup.png' width="100%"/>
+      </section>
+
+      <section class="readme-section">
+        <h2 class="readme-header">2. Add some HTML content</h2>
+        <ul>
+          <li>
+            To save time, just right-click on the following images and save them in your <code>images</code> folder
+            <ul class="list-inline">
+              <li><img src="images/logic.png" alt="" width="140"></li>
+              <li><img src="images/trustable.png" alt="" width="140"></li>
+              <li><img src="images/fast.png" alt="" width="140"></li>
+            </ul>
+          </li>
+          <li>Then start with this HTML code in <code>index.html</code></li>
+        </ul>
+<pre class="highlight html"><code><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>My profile page<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/my_face.png"</span> <span class="na">alt=</span><span class="s">"picture description"</span> <span class="na">height=</span><span class="s">"140"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello my name is ... 😎<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Here you describe your personnality...<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contact me<span class="nt">&lt;/a&gt;</span>
+
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/fast.png"</span> <span class="na">alt=</span><span class="s">"picture description"</span> <span class="na">height=</span><span class="s">"140"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Fast<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/trustable.png"</span> <span class="na">alt=</span><span class="s">"picture description"</span> <span class="na">height=</span><span class="s">"140"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Intelligent<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/logic.png"</span> <span class="na">alt=</span><span class="s">"picture description"</span> <span class="na">height=</span><span class="s">"140"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Awesome<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>This is a Website made with ❤️ and Le Wagon<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+        <h3>Extra - find nice personal icons</h3>
+        <ul>
+          <li>You can pick your icons on <a href="https://undraw.co/illustrations" target="_blank">Undraw</a>, <a href="https://thenounproject.com/" target="_blank">The Noun Project</a> or <a href="https://nucleoapp.com/premium-icons/" target="_blank">NucleoApp</a> (they have a free pack).</li>
+          <li><strong>Tips</strong>: Also stay tuned checking <a href="https://www.producthunt.com/search?q=icons" target="_blank">icon resources on Product Hunt</a></li>
+        </ul>
+      </section>
+
+      <section class="readme-section">
+        <h2 class="readme-header">3. CSS for fonts & colors</h2>
+        <p>Link your stylesheet <code>style.css</code> in the <code>head</code> section of your HTML</p>
+
+
+<pre class="highlight html"><code><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'style.css'</span> <span class="na">rel=</span><span class="s">'stylesheet'</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre>
+        <p>Then copy/paste the CSS code below in <code>style.css</code> and <strong>fix it</strong> cause it's ugly</p>
+        <ul>
+          <li>For fonts use <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+          <li>For colors use <a href="http://www.colorzilla.com/chrome/" target="_blank">Colorzilla Chrome plugin</a> to pick colors from other websites</li>
+          <li>You can also find nice colors on <a href="https://coolors.co/" target="_blank">Coolors</a> or <a href="http://colorhunt.co/" target="_blank">Color Hunt</a></li>
+        </ul>
+<pre class="highlight css"><code><span class="c">/* style.css */</span>
+<span class="nt">body</span><span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">245</span><span class="p">,</span><span class="m">245</span><span class="p">,</span><span class="m">245</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Helvetica</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h1</span><span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Courier</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Courier</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">4. Wrap with <code>div</code></h2>
+        <p>Wrap different sections in different <code>div</code></p>
+
+<pre class="highlight html"><code>  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/my_face.png"</span> <span class="na">alt=</span><span class="s">"picture description"</span> <span class="na">height=</span><span class="s">"140"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello my name is ... 😎<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Here you describe your personnality...<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contact me<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/fast.png"</span> <span class="na">alt=</span><span class="s">"picture description"</span> <span class="na">height=</span><span class="s">"140"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Fast<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/trustable.png"</span> <span class="na">alt=</span><span class="s">"picture description"</span> <span class="na">height=</span><span class="s">"140"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Intelligent<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/logic.png"</span> <span class="na">alt=</span><span class="s">"picture description"</span> <span class="na">height=</span><span class="s">"140"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Awesome<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>This is a Website made with ❤️ and Le Wagon<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+</code></pre>
+
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">5. Name your tags</h2>
+        <ul>
+          <li>Name your banner and footer with <code>id</code> like <code>&lt;div id="banner"&gt;</code> and <code>&lt;div id="footer"&gt;</code></li>
+          <li>Name your features with <code>class</code> like <code>&lt;div class="card-white"&gt;</code></li>
+          <li>Then add this nice CSS code</li>
+        </ul>
+<pre class="highlight css"><code><span class="nf">#banner</span><span class="p">{</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("https://unsplash.it/1000/600?random")</span><span class="p">;</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="n">cover</span><span class="p">;</span>
+  <span class="nl">background-position</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">150px 0</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#banner</span> <span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#banner</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="no">40px</span><span class="p">;</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">0.8</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#banner</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#footer</span><span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nb">black</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">lightgrey</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.card-white</span><span class="p"> {</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">white</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="m">center</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">0 4px 6px rgba(50,50,93,.11)</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="nb">16px 0px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.card-white</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.btn-blue</span><span class="p"> {</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">white</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#6772e5</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">0 4px 6px rgba(50,50,93,.11)</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">15px 20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.btn-blue</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#7795f8</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">white</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+<h3>Extra - find a cool background image</h3>
+<ul>
+  <li>You can pick your background picture on <a href="https://www.pexels.com/" target="_blank">Pexels</a> or
+  <a href="https://picsum.photos/images" target="_blank">Picsum</a></li>
+</ul>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">6. CSS Grid</h2>
+        <p>A bit of <code>html</code>and of <code>css</code>!</p>
+        <p>Let's add a <code>&lt;div class="cards"&gt;</code> around our boxes <code>.card-white</code></p>
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cards"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-white"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-white"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-white"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+        <p>With a bit of CSS style</p>
+<pre class="highlight css"><code><span class="nf">.cards</span><span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="no">15px auto</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="no">1000px</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="no">grid</span><span class="p">;</span>
+  <span class="nl">grid-template-columns</span><span class="p">:</span> <span class="no">1fr 1fr 1fr</span><span class="p">;</span>
+  <span class="nl">grid-gap</span><span class="p">:</span> <span class="no">16px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">7. Responsive</h2>
+
+        <p>Let's add media queries in our <code>css</code> to <strong>add responsiveness</strong></p>
+<pre class="highlight css"><code><span class="nf">@media(max-width: 992px)</span><span class="p">{</span>
+  <span class="nf">.cards</span><span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="no">750px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nf">@media(max-width: 768px)</span><span class="p">{</span>
+  <span class="nf">.cards</span><span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="no">90%</span><span class="p">;</span>
+  <span class="nl">grid-template-columns</span><span class="p">:</span> <span class="no">1fr</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">8. Github Pages</h2>
+        <p>Just follow the process <a href="https://pages.github.com/">Github Pages</a></p>
+        <p>Your first web page is now online 🚀 <strong>Congrats !</strong></p>
+      </section>
+    </div>
+  </div>
+</div>
+
+  </body>
+
+</html>
